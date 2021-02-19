@@ -18,3 +18,5 @@ height = float(input("whats your hight in meter? "))
 weight = float(input("whats your weight in Kg's? "))
 calculatedBMI = str(int(weight/(height**2)))
 print("Calculated BMI is " + calculatedBMI)
+
+print("Testing Day 2 branch in GIT")
