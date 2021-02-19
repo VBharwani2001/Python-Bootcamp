@@ -16,8 +16,5 @@
 print("----------------Day 2 BMI Calculator----------------")
 height = float(input("whats your hight in meter? "))
 weight = float(input("whats your weight in Kg's? "))
-calculatedBMI = int(weight/(height**2))
-print(calculatedBMI)
-
-print("--------------GITHUB testing-------------------------")
-print("--------------GITHUB testing-------------------------")
+calculatedBMI = str(int(weight/(height**2)))
+print("Calculated BMI is " + calculatedBMI)
