@@ -13,10 +13,24 @@
 # second_num = int(two_digit_num[1])
 # print(first_num + second_num)
 
-print("----------------Day 2 BMI Calculator----------------")
-height = float(input("whats your hight in meter? "))
-weight = float(input("whats your weight in Kg's? "))
-calculatedBMI = str(int(weight/(height**2)))
-print("Calculated BMI is " + calculatedBMI)
+# print("----------------Day 2 BMI Calculator----------------")
+# height = float(input("whats your hight in meter? "))
+# weight = float(input("whats your weight in Kg's? "))
+# calculatedBMI = str(int(weight/(height**2)))
+# print("Calculated BMI is " + calculatedBMI)
 
-print("Testing Day 2 branch in GIT")
+# print("Testing Day 2 branch in GIT")
+print("-----Day 2 Life in week challenge -------")
+total_days = 90*365
+total_weeks = 90*52
+total_months = 90 * 12
+age = int(input("What is your current age? "))
+days_lived = age * 365
+weeks_lived = age * 52
+months_lived = age*12
+
+days_to_live = total_days - days_lived
+weeks_to_live = total_weeks - weeks_lived
+months_to_live = total_months - months_lived
+print(
+    f"You have {days_to_live} days, {weeks_to_live} weeks & {months_to_live} months left to live")
