@@ -27,19 +27,32 @@
 #     elif age < 12:
 #         print("Please pay 5$ to go ahead")
 # else:
-#     print("You cannot ride")
+# #     print("You cannot ride")
 
-print("----------------Day 3 BMI Calculator 2.0----------------")
-height = float(input("whats your hight in meter? "))
-weight = float(input("whats your weight in Kg's? "))
-calculatedBMI = int(weight/(height**2))
-if calculatedBMI <= 18.5:
-    print("You are under weight !!")
-elif calculatedBMI > 18.5 & calculatedBMI <= 25:
-    print("You have normal weight ! ")
-elif calculatedBMI > 25 & calculatedBMI <= 30:
-    print("You are over weight ! ")
-elif calculatedBMI > 30 & calculatedBMI <= 35:
-    print("You are Obese ! ")
-elif calculatedBMI > 35:
-    print("you are clinically obese !!!!!")
+# print("----------------Day 3 BMI Calculator 2.0----------------")
+# height = float(input("whats your hight in meter? "))
+# weight = float(input("whats your weight in Kg's? "))
+# calculatedBMI = int(weight/(height**2))
+# if calculatedBMI <= 18.5:
+#     print("You are under weight !!")
+# elif calculatedBMI > 18.5 & calculatedBMI <= 25:
+#     print("You have normal weight ! ")
+# elif calculatedBMI > 25 & calculatedBMI <= 30:
+#     print("You are over weight ! ")
+# elif calculatedBMI > 30 & calculatedBMI <= 35:
+#     print("You are Obese ! ")
+# elif calculatedBMI > 35:
+#     print("you are clinically obese !!!!!")
+
+print("----Leap year check challenge----")
+year = int(input("Year: "))
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year")
+        else:
+            print("Not a leap year")
+    else:
+        print("Leap year")
+else:
+    print("Not a leap year")
