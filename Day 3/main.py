@@ -57,21 +57,45 @@
 # else:
 #     print("Not a leap year")
 
-print("-----------------Roller Coster Height + Age + photos check----------------------")
-height = int(input("Please enter your height in cm: "))
+# print("-----------------Roller Coster Height + Age + photos check----------------------")
+# height = int(input("Please enter your height in cm: "))
+# bill = 0
+# photos = input("Do you need photos?(Y or N): ")
+# if height > 120:
+#     print("You can Ride")
+#     age = int(input("Whats your age? "))
+#     if age >= 18:
+#         bill += 12
+#     elif age >= 12 & age < 18:
+#         bill += 7
+#     elif age < 12:
+#         bill += 5
+#     if photos == "Y":
+#         bill += 3
+#     print(f"You are eligible to ride and your bill would be {bill}$ only")
+# else:
+#     print("You cannot ride")
+
+print("--------Welcome to pizza shop------------")
+pizza_size = input("What size pizza would you like to have?(S, M or L):     ")
+add_pepperoni = input(
+    "Would you like to have pepperoni on it?(S = +2$ and M/L = +3$)(Y or N):    ")
+add_cheese = input("Would you like extra cheese on it?(+1$)(Y or N):    ")
 bill = 0
-photos = input("Do you need photos?(Y or N): ")
-if height > 120:
-    print("You can Ride")
-    age = int(input("Whats your age? "))
-    if age >= 18:
-        bill += 12
-    elif age >= 12 & age < 18:
-        bill += 7
-    elif age < 12:
-        bill += 5
-    if photos == "Y":
+if pizza_size == "S":
+    bill += 15
+elif pizza_size == "M":
+    bill += 20
+elif pizza_size == "L":
+    bill += 25
+
+if add_pepperoni == "Y":
+    if pizza_size == "S":
+        bill += 2
+    elif pizza_size == "M" or pizza_size == "L":
         bill += 3
-    print(f"You are eligible to ride and your bill would be {bill}$ only")
-else:
-    print("You cannot ride")
+
+if add_cheese == "Y":
+    bill += 1
+
+print(f"Thank you for the order. You final amount to pay is {bill} $")
