@@ -44,15 +44,34 @@
 # elif calculatedBMI > 35:
 #     print("you are clinically obese !!!!!")
 
-print("----Leap year check challenge----")
-year = int(input("Year: "))
-if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
-            print("Leap year")
-        else:
-            print("Not a leap year")
-    else:
-        print("Leap year")
+# print("----Leap year check challenge----")
+# year = int(input("Year: "))
+# if year % 4 == 0:
+#     if year % 100 == 0:
+#         if year % 400 == 0:
+#             print("Leap year")
+#         else:
+#             print("Not a leap year")
+#     else:
+#         print("Leap year")
+# else:
+#     print("Not a leap year")
+
+print("-----------------Roller Coster Height + Age + photos check----------------------")
+height = int(input("Please enter your height in cm: "))
+bill = 0
+photos = input("Do you need photos?(Y or N): ")
+if height > 120:
+    print("You can Ride")
+    age = int(input("Whats your age? "))
+    if age >= 18:
+        bill += 12
+    elif age >= 12 & age < 18:
+        bill += 7
+    elif age < 12:
+        bill += 5
+    if photos == "Y":
+        bill += 3
+    print(f"You are eligible to ride and your bill would be {bill}$ only")
 else:
-    print("Not a leap year")
+    print("You cannot ride")
