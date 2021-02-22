@@ -76,26 +76,50 @@
 # else:
 #     print("You cannot ride")
 
-print("--------Welcome to pizza shop------------")
-pizza_size = input("What size pizza would you like to have?(S, M or L):     ")
-add_pepperoni = input(
-    "Would you like to have pepperoni on it?(S = +2$ and M/L = +3$)(Y or N):    ")
-add_cheese = input("Would you like extra cheese on it?(+1$)(Y or N):    ")
-bill = 0
-if pizza_size == "S":
-    bill += 15
-elif pizza_size == "M":
-    bill += 20
-elif pizza_size == "L":
-    bill += 25
+# print("--------Welcome to pizza shop------------")
+# pizza_size = input("What size pizza would you like to have?(S, M or L):     ")
+# add_pepperoni = input(
+#     "Would you like to have pepperoni on it?(S = +2$ and M/L = +3$)(Y or N):    ")
+# add_cheese = input("Would you like extra cheese on it?(+1$)(Y or N):    ")
+# bill = 0
+# if pizza_size == "S":
+#     bill += 15
+# elif pizza_size == "M":
+#     bill += 20
+# elif pizza_size == "L":
+#     bill += 25
 
-if add_pepperoni == "Y":
-    if pizza_size == "S":
-        bill += 2
-    elif pizza_size == "M" or pizza_size == "L":
-        bill += 3
+# if add_pepperoni == "Y":
+#     if pizza_size == "S":
+#         bill += 2
+#     elif pizza_size == "M" or pizza_size == "L":
+#         bill += 3
 
-if add_cheese == "Y":
-    bill += 1
+# if add_cheese == "Y":
+#     bill += 1
+# print(f"Thank you for the order. You final amount to pay is {bill} $")
 
-print(f"Thank you for the order. You final amount to pay is {bill} $")
+
+print("------------Love Calculator-------------")
+your_name = input("whats your name?: ")
+second_name = input("whats your lovers name?:  ")
+your_name = your_name.lower()
+second_name = second_name.lower()
+check_L = your_name.count("l") + second_name.count("l")
+check_O = your_name.count("o") + second_name.count("o")
+check_V = your_name.count("v") + second_name.count("v")
+check_E = your_name.count("e") + second_name.count("e")
+check_love = check_L + check_O + check_V + check_E
+check_T = your_name.count("t") + second_name.count("t")
+check_R = your_name.count("r") + second_name.count("r")
+check_U = your_name.count("u") + second_name.count("u")
+check_E = your_name.count("e") + second_name.count("e")
+check_true = check_T + check_R + check_U + check_E
+true_love_score = (check_true*10) + (check_love)
+if true_love_score < 10 or true_love_score > 90:
+    print(
+        f"Your love score is {true_love_score} and you go together like mint and coke")
+elif true_love_score > 40 and true_love_score < 50:
+    print(f"Your love score is {true_love_score} and you go alright together")
+else:
+    print(f"Your score is {true_love_score}")
