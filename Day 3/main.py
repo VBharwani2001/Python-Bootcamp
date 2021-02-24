@@ -100,26 +100,69 @@
 # print(f"Thank you for the order. You final amount to pay is {bill} $")
 
 
-print("------------Love Calculator-------------")
-your_name = input("whats your name?: ")
-second_name = input("whats your lovers name?:  ")
-your_name = your_name.lower()
-second_name = second_name.lower()
-check_L = your_name.count("l") + second_name.count("l")
-check_O = your_name.count("o") + second_name.count("o")
-check_V = your_name.count("v") + second_name.count("v")
-check_E = your_name.count("e") + second_name.count("e")
-check_love = check_L + check_O + check_V + check_E
-check_T = your_name.count("t") + second_name.count("t")
-check_R = your_name.count("r") + second_name.count("r")
-check_U = your_name.count("u") + second_name.count("u")
-check_E = your_name.count("e") + second_name.count("e")
-check_true = check_T + check_R + check_U + check_E
-true_love_score = (check_true*10) + (check_love)
-if true_love_score < 10 or true_love_score > 90:
-    print(
-        f"Your love score is {true_love_score} and you go together like mint and coke")
-elif true_love_score > 40 and true_love_score < 50:
-    print(f"Your love score is {true_love_score} and you go alright together")
+# print("------------Love Calculator-------------")
+# your_name = input("whats your name?: ")
+# second_name = input("whats your lovers name?:  ")
+# your_name = your_name.lower()
+# second_name = second_name.lower()
+# check_L = your_name.count("l") + second_name.count("l")
+# check_O = your_name.count("o") + second_name.count("o")
+# check_V = your_name.count("v") + second_name.count("v")
+# check_E = your_name.count("e") + second_name.count("e")
+# check_love = check_L + check_O + check_V + check_E
+# check_T = your_name.count("t") + second_name.count("t")
+# check_R = your_name.count("r") + second_name.count("r")
+# check_U = your_name.count("u") + second_name.count("u")
+# check_E = your_name.count("e") + second_name.count("e")
+# check_true = check_T + check_R + check_U + check_E
+# true_love_score = (check_true*10) + (check_love)
+# if true_love_score < 10 or true_love_score > 90:
+#     print(
+#         f"Your love score is {true_love_score} and you go together like mint and coke")
+# elif true_love_score > 40 and true_love_score < 50:
+#     print(f"Your love score is {true_love_score} and you go alright together")
+# else:
+#     print(f"Your score is {true_love_score}")
+
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+answer = ""
+answer = input("left or right:   ")
+if answer == "right":
+    print("Game Over!")
 else:
-    print(f"Your score is {true_love_score}")
+    answer = ""
+    answer = input("Swim or wait:   ")
+    if answer == "swim":
+        print("You were eaten by shark. Game over!")
+    else:
+        answer = ""
+        answer = input(
+            "Great choice! You have to choose from Red ,Yellow or Blue door:  ")
+        if answer == "yellow":
+            print("You won gold!")
+        else:
+            print("Game Over")
