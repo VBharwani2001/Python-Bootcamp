@@ -6,15 +6,22 @@ class Snake:
     def __init__(self):
         self.turtles = []
         self.create_snake()
+        self.head = self.turtles[0]
 
     def create_snake(self):
         for position in start_position:
-            turtle = Turtle()
-            turtle.shape("square")
-            turtle.color("white")
-            turtle.penup()
-            turtle.goto(position)
-            self.turtles.append(turtle)
+            self.add_snake(position)
+
+    def add_snake(self, position):
+        turtle = Turtle()
+        turtle.shape("square")
+        turtle.color("white")
+        turtle.penup()
+        turtle.goto(position)
+        self.turtles.append(turtle)
+
+    def extend_snake(self):
+        self.add_snake(self.turtles[-1].position())
 
     def move(self):
         for turtle in range(len(self.turtles)-1, 0, -1):
