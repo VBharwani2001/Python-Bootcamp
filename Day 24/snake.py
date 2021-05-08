@@ -30,6 +30,13 @@ class Snake:
             self.turtles[turtle].goto(new_x, new_y)
         self.turtles[0].forward(20)
 
+    def reset(self):
+        for turtle in self.turtles:
+            turtle.hideturtle()
+        self.turtles.clear()
+        self.create_snake()
+        self.head = self.turtles[0]
+
     def up(self):
         self.turtles[0].setheading(90)
 
